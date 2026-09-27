@@ -1,0 +1,349 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore Andhra Pradesh</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #00695c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+        .hero {
+            background-color: #009688;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #00695c;
+            margin-bottom: 30px;
+        }
+
+        .places {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #bbb;
+        }
+
+        .card h3 {
+            color: #00695c;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .food {
+            background-color: #fff3e0;
+        }
+
+        .culture {
+            background-color: white;
+        }
+
+        .contact {
+            background-color: #e0f2f1;
+        }
+
+        input,
+        textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 12px;
+            margin: 8px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .submit {
+            background-color: #00695c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Andhra Pradesh</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#places">Places</a>
+            <a href="#food">Food</a>
+            <a href="#culture">Culture</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="home">
+        <h2>Welcome to Andhra Pradesh</h2>
+
+        <p>
+            Explore the beauty, culture, food and famous
+            destinations of Andhra Pradesh.
+        </p>
+
+        <button onclick="location.href='#places'">
+            Explore Now
+        </button>
+    </section>
+
+
+    <section id="places">
+        <h2>Famous Places</h2>
+
+        <div class="places">
+
+            <div class="card">
+                <h3>Tirupati</h3>
+
+                <p>
+                    Tirupati is famous for the Sri Venkateswara
+                    Temple and is one of India's important
+                    pilgrimage destinations.
+                </p>
+
+                <button>Explore</button>
+            </div>
+
+
+            <div class="card">
+                <h3>Visakhapatnam</h3>
+
+                <p>
+                    Visakhapatnam is a beautiful coastal city
+                    known for its beaches, hills and scenic views.
+                </p>
+
+                <button>Explore</button>
+            </div>
+
+
+            <div class="card">
+                <h3>Araku Valley</h3>
+
+                <p>
+                    Araku Valley is known for its beautiful
+                    mountains, waterfalls, forests and coffee
+                    plantations.
+                </p>
+
+                <button>Explore</button>
+            </div>
+
+
+            <div class="card">
+                <h3>Amaravati</h3>
+
+                <p>
+                    Amaravati is known for its Buddhist heritage
+                    and historical importance.
+                </p>
+
+                <button>Explore</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="food" id="food">
+
+        <h2>Famous Andhra Food</h2>
+
+        <div class="places">
+
+            <div class="card">
+                <h3>Andhra Meals</h3>
+                <p>
+                    Traditional Andhra meals are known for
+                    their variety of dishes and spicy flavors.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Pulihora</h3>
+                <p>
+                    Pulihora is a popular rice dish prepared
+                    with tamarind, spices and peanuts.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Gongura Pachadi</h3>
+                <p>
+                    Gongura pachadi is a famous Andhra dish
+                    prepared using sorrel leaves and spices.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="culture" id="culture">
+
+        <h2>Culture of Andhra Pradesh</h2>
+
+        <p>
+            Andhra Pradesh has a rich cultural heritage with
+            traditional dance, music, festivals, arts and crafts.
+        </p>
+
+        <br>
+
+        <p>
+            Kuchipudi is one of the famous classical dance forms
+            associated with Andhra Pradesh.
+        </p>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Enter Your Name"
+                required
+            >
+
+            <br>
+
+            <input
+                type="email"
+                placeholder="Enter Your Email"
+                required
+            >
+
+            <br>
+
+            <textarea
+                placeholder="Enter Your Message"
+                required
+            ></textarea>
+
+            <br>
+
+            <button class="submit" type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>
+            © 2026 Explore Andhra Pradesh | Designed by Pavan
+        </p>
+    </footer>
+
+</body>
+</html>
+```
